@@ -4,11 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style src ="styles.css"></style>
+    <link rel="stylesheet" href="styles.css">
     <script src= "scripts.js"></script>
     <title>FrameMe Optical Lens Calculator</title>
 </head>
 <body>
-    
+    <div class="lensoptions">
+        <label for="Lens">Please choose an lens index:</label>
+            <select name="Lenses" id="Lenses">
+                <option value="1.50">1.50 Plastic</option>
+                <option value="Poly">Polycarbonate</option>
+                <option value="1.60">1.60 Hi-Index</option>
+                <option value="1.67">1.67 Hi-Index</option>
+                <option value="1.74">1.74 Hi-Index</option>
+            </select>
+    </div>
+    <div class="coatings">
+        <label for="Coats">What Coatings did they want?</label>
+            <select name="Coatings" id="Coatings">
+                <option value="basic">Basic Coating</option>
+                <option value="blue">Blue Coating</option>
+            </select>
+    </div>
 </body>
 </html>

@@ -1,0 +1,14 @@
+body{
+    display:flex;
+    justify-content: center;
+    height: 1080px;
+    width: 1920px;
+    flex-wrap: wrap;
+}
+.lensoptions{
+    display: flex;
+}
+
+select{
+    max-height: 20px;
+}
