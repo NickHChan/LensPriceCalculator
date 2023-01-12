@@ -5,42 +5,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <script src= "scripts.js"></script>
     <title>FrameMe Optical Lens Calculator</title>
 </head>
 <body>
-    <div class="lensoptions">
-        <label for="Lens">Please choose an lens index:</label>
-            <select name="Lenses" id="Lenses">
-                <option value="1.50">1.50 Plastic</option>
-                <option value="Poly">Polycarbonate</option>
-                <option value="1.60">1.60 Hi-Index</option>
-                <option value="1.67">1.67 Hi-Index</option>
-                <option value="1.74">1.74 Hi-Index</option>
-            </select>
+    <div id="toppart">
+        <div class="lensoptions">
+            <label for="Lens">Please choose an lens index:</label>
+                <select name="Lenses" id="Lenses" type="text">
+                    <option type="text" value="100" id="1.50">1.50 Plastic</option>
+                    <option type="text" value="150" id="Poly">Polycarbonate</option>
+                    <option type="text" value="175" id="1.60">1.60 Hi-Index</option>
+                    <option type="text" value="200" id="1.67">1.67 Hi-Index</option>
+                    <option type="text" value="275" id="1.74">1.74 Hi-Index</option>
+                </select>
+        </div>
+        <div class="coatings">
+            <label for="Coats">What Coatings did they want?</label>
+                <select name="Coatings" id="Coatings">
+                    <option type="text" value="0">Basic Coating</option>
+                    <option type="text" value="75">Blue Coating</option>
+                </select>
+        </div>
+        <div class="additional">
+            <label for="etc">Any Additional Coatings?</label>
+                <select name="Etc" id="Etc">
+                    <option type="text" value="0">None</option>
+                    <option type="text" value="100">Transitions</option>
+                    <option type="text" value="60">Tinted</option>
+                    <option type="text" value="100">Polarized</option>   
+                </select>
+        </div>
+        <div class="frametype">
+            <label for="frametype">What Frame Type is it?</label>
+                <select name="Frame" id="Frame">
+                    <option type="text" value="0">Normal</option>
+                    <option type="text" value="50">Semi-Rimless</option>
+                    <option type="text" value="75">Drill Mount/Rimless</option>
+                </select>
+        </div>
     </div>
-    <div class="coatings">
-        <label for="Coats">What Coatings did they want?</label>
-            <select name="Coatings" id="Coatings">
-                <option value="basic">Basic Coating</option>
-                <option value="blue">Blue Coating</option>
-            </select>
+    <div id="bottompart">
+        <div class="totalsentence">The Total would be:</div>
+        <button id="calculate" onclick="calculateTotal()">Calculate</button>
+        <input type="text" id="total" value="0" readonly="readonly"/>
     </div>
-    <div class="additional">
-        <label for="etc">Any Additional Coatings?</label>
-            <select name="Etc" id="Etc">
-                <option value="transitions">Transitions</option>
-                <option value="tint">Tinted</option>
-                <option value="polarized">Polarized</option>   
-            </select>
-    </div>
-    <div class="frametype">
-        <label for="frametype">What Frame Type is it?</label>
-            <select name="Frame" id="Frame">
-                <option value="normal">Normal</option>
-                <option value="semi">Semi-Rimless</option>
-                <option value="drill">Drill Mount/Rimless</option>
-            </select>
-    </div>
+<script src= "scripts.js"></script>
 </body>
 </html>
