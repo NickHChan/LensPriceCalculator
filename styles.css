@@ -5,6 +5,7 @@ body{
     width: 1920px;
     flex-wrap: wrap;
     gap: 10px;
+    background-color: darkgrey;
 }
 .lensoptions,
 .coatings,
