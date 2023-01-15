@@ -7,10 +7,11 @@ body{
     flex-wrap: wrap;
     gap: 25px;
     background-color: darkgrey;
+    font-size: 17px;
 }
 #toppart{
     display: flex;
-    gap: 10px;
+    gap: 15px;
     margin-top: 20px;
 }
 #bottompart{
