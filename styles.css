@@ -1,3 +1,7 @@
+html{
+    cursor: url('./extra/TestCursor.png'), auto;
+    height: 100%;
+}
 body{
     display:flex;
     justify-content: center;
@@ -7,9 +11,10 @@ body{
     flex-wrap: wrap;
     gap: 25px;
     background-color: darkgrey;
-    font-size: 17px;
+    font-size: 30px;
 }
 #toppart{
+
     display: flex;
     gap: 15px;
     margin-top: 20px;
@@ -29,11 +34,20 @@ body{
 }
 
 select{
-    max-height: 20px;
+    max-height: 40px;
+    cursor: url('./extra/TestCursor.png'), auto;
 }
 
 #total{
-    height: 20px;
-    width: 70px;
-    margin-left: 30px;
+    height: 40px;
+    width: 100px;
+    margin-left: 70px;
+    font-size: 30px;
+}
+button,
+label,
+option,
+select {
+    cursor: url('./extra/TestCursor.png'), auto;
+    font-size: 30px;
 }
